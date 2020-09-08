@@ -17,6 +17,9 @@ RUN apt-get update \
         libunwind8 \
         netcat
 
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
+
 RUN apt-get install python3 python3-pip python3-venv
 RUN pip3 install chaostoolkit
 
